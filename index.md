@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Extensive Automation - Test and Deploy automation framework</title>
+    <meta name="description" content="Extensive Automation is a generic test and deployment automation framework for integration, validation, regression and end-to-end usages. The framework provided a rich and collaborative workspace environment. " />
+    <meta name="keywords" content="extensive automation, extensive testing, extensive test center, testing tools, tests, automatic testing, api testing, gui testing, protocols testing, test based model, scripting, python, record and replay" />
+    <meta name="keywords" content="centre de test, test automatique, outils de test, test api, test protocolaire" />
+    <meta name="keywords" content="test framework, open source, automation framework"/>
+        <link rel="icon" href="img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="js/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+        <link href="default.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+
+ <!-- main top menu -->
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="img/logo_extensive_testing_small.png" alt="logo extensive testing"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#features"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Features</a></li>
+                <li><a href="#news"><span aria-hidden="true"></span> #News</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#docs">Documentations</a></li>
+                <li><a href="#users">Users</a></li>
+              </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> About</a></li>
+          </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+ <!-- header -->
+        <div class="promo">
+        <div class="container">
+            <div class="promo-caption">
+                <h1>Automate everything from anywhere with</h1>
+                <p><img src="img/logo_extensive_testing.png" class="img-responsive center-block" alt="Extensive Automation Logo" ></p>
+
+
+            </div>
+        </div>
+        </div>
+
+
+
+        <!-- features description -->
+    <div id="download" class="features">
+        <div class="container separator">
+            <h2 class="title text-center">Downloads</h2>
+
+
+            <div class="table-responsive ">
+
+                    <h3 >Extensive Automation Server</h3 >
+                    <table class="table">
+                      <tbody>
+                        <tr>
+
+                          <td style="color:  #85929e "><strong>docker image</strong></td>
+                          <td >
+                            <a  href="https://hub.docker.com/r/extensiveautomation/extensiveautomation-server" target="_blank">extensiveautomation/extensiveautomation-server:<?php echo file_get_contents('./RELEASE_SERVER_VERSION', true); ?></a>
+                          </td>
+                          <td></td>
+                          <td>
+                            <a class="btn btn-xs btn-success active"
+                               role="button"
+                               href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/README.md#docker-image"
+                               target="_blank">doc install</a>
+                          </td>
+
+                        </tr>
+                        <tr>
+                           <td style="color:  #85929e "><strong>pypi</strong></td>
+                          <td><a  href="https://pypi.org/project/extensiveautomation-server/"  target="_blank">extensiveautomation-server <?php echo file_get_contents('./RELEASE_SERVER_VERSION', true); ?></a></td>
+                          <td></td>
+                         <td>
+                            <a class="btn btn-xs btn-success active"
+                               role="button"
+                               href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/README.md#pypi-package"
+                               target="_blank">doc install</a>
+                         <td>
+                        </tr>
+                        <tr>
+                           <td >tar.gz</td>
+                          <td><a  href="./ftp/server/extensiveautomation-server-<?php echo file_get_contents('./RELEASE_SERVER_VERSION', true); ?>.tar.gz">extensiveautomation-server-<?php echo file_get_contents('./RELEASE_SERVER_VERSION', true); ?></a></td>
+                          <td>
+                            <?php echo file_get_contents('./RELEASE_SERVER_DATE', true); ?>
+                          </td>
+                         <td> <a class="btn btn-xs btn-info active " role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/src/ea/releasenotes.txt" target="_blank">change logs</a>
+                         <a class="btn btn-xs btn-success active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/README.md#source-code" target="_blank">doc install</a>
+                         <td>
+                        </tr>
+     <tr>
+                          <td>plugins</td>
+                          <td>
+                            <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-plugin-cli/blob/master/README.md"target="_blank">cli</a>
+                            | <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-plugin-web/blob/master/README.md"target="_blank">web</a>
+                            | <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-plugin-gui/blob/master/README.md"target="_blank">gui</a>
+                            | <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-plugins-server/"target="_blank">others...</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+
+                        <tr>
+                          <td >source code</td>
+                          <td><a  href="https://github.com/ExtensiveAutomation/extensiveautomation-server" target="_blank">extensiveautomation-server</a></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+
+                        <tr>
+                          <td >rest api</td>
+                          <td>
+                            <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/src/ea/scripts/swagger/common_restapi.yaml"target="_blank">swagger_common</a>
+                            | <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/src/ea/scripts/swagger/admin_restapi.yaml"target="_blank">swagger_admin</a>
+                            | <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-server/blob/master/src/ea/scripts/swagger/tester_restapi.yaml"target="_blank">swagger_tester</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                         </tr>
+
+
+                         </tbody>
+                    </table>
+           <h3 >Extensive Automation Clients</h3 >
+                <table class="table">
+                      <tbody>
+                        <tr>
+                          <td style="color:#85929e"><strong>docker image</strong></td>
+                          <td>
+                            <a  href="https://hub.docker.com/r/extensiveautomation/extensiveautomation-webclient" target="_blank">extensiveautomation/extensiveautomation-webclient:<?php echo file_get_contents('./RELEASE_WEBCLIENT_VERSION', true); ?></a>
+                          </td>
+                          <td></td>
+                          <td>
+                            <a class="btn btn-xs btn-success active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-webclient/blob/master/README.md#installing-from-dockerhub" target="_blank">doc install</a>
+                          </td>
+                          </td>
+                          <td></td>
+                         </tr>
+                        <tr>
+                          <td>tar.gz</td>
+                          <td>
+                            <a  href="./ftp/webclient/extensiveautomation-webclient-<?php echo file_get_contents('./RELEASE_WEBCLIENT_VERSION', true); ?>.tar.gz">extensiveautomation-webclient-<?php echo file_get_contents('./RELEASE_WEBCLIENT_VERSION', true); ?></a>
+                          </td>
+                          <td>
+                            <?php echo file_get_contents('./RELEASE_WEBCLIENT_DATE', true); ?>
+                          </td>
+                          <td> <a class="btn btn-xs btn-info active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-webclient/blob/master/releasenotes.txt" target="_blank">change logs</a>
+                          <a class="btn btn-xs btn-success active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-webclient/blob/master/README.md" target="_blank">doc install</a>
+                         </tr>
+                        <tr>
+                         <td>source code</td>
+                          <td>
+                            <a href="https://github.com/ExtensiveAutomation/extensiveautomation-webclient.git" target="_blank">extensiveautomation-webclient</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td style="color:#85929e" ><strong>executable</strong></td>
+                          <td>
+                            <a  href="./ftp/appclient/extensiveautomation-appclient-<?php echo file_get_contents('./RELEASE_APPCLIENT_VERSION', true); ?>-64bit-portable.zip" >extensiveautomation-appclient-<?php echo file_get_contents('./RELEASE_APPCLIENT_VERSION', true); ?>-64bit-portable</a>
+                          </td>
+                          <td>
+                            <?php echo file_get_contents('./RELEASE_APPCLIENT_DATE', true); ?>
+                          </td>
+
+                          <td>
+                              <a class="btn btn-xs btn-info active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-appclient/blob/master/Resources/releasenotes.txt" target="_blank">change logs</a>
+                              <a class="btn btn-xs btn-success active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-appclient/blob/master/README.md" target="_blank">doc install</a>
+                         </tr>
+                         <tr>
+                          <td>source code</td>
+                          <td>
+                            <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-appclient"target="_blank">extensiveautomation-appclient</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                         </tr>
+                 <tr>
+                          <td>plugins</td>
+                          <td>
+                            <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-plugins-client" target="_blank">extensiveautomation-appclient-plugins</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                         </tr>
+
+                         </tbody>
+                    </table>
+
+                <h3 >Extensive Automation Agents</h3 >
+                <table class="table">
+                      <tbody>
+
+
+                        <tr>
+                         <td style="color:#85929e"><strong>executable</strong></td>
+                          <td>
+                            <a href="./ftp/apptoolbox/extensiveautomation-apptoolbox-<?php echo file_get_contents('./RELEASE_APPTOOLBOX_VERSION', true); ?>-64bit-portable.zip">extensiveautomation-apptoolbox-<?php echo file_get_contents('./RELEASE_APPTOOLBOX_VERSION', true); ?>-64bit-portable</a>
+                          </td>
+                          <td></td>
+                          <td>
+                              <a class="btn btn-xs btn-info active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-apptoolbox/blob/master/releasenotes.txt" target="_blank">change logs</a>
+                              <a class="btn btn-xs btn-success active" role="button" href="https://github.com/ExtensiveAutomation/extensiveautomation-apptoolbox/blob/master/README.md" target="_blank">doc install</a>
+                            </tr>
+                        <tr>
+                         <td>tar.gz</td>
+                          <td>
+                            <a  href="./ftp/apptoolbox/extensiveautomation-apptoolbox-<?php echo file_get_contents('./RELEASE_APPTOOLBOX_VERSION', true); ?>.tar.gz">extensiveautomation-apptoolbox-<?php echo file_get_contents('./RELEASE_APPTOOLBOX_VERSION', true); ?></a>
+                          </td>
+                          <td>
+                            <?php echo file_get_contents('./RELEASE_APPTOOLBOX_DATE', true); ?>
+                          </td>
+                         </tr>
+                        <tr>
+                          <td >source code</td>
+                          <td>
+                            <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-apptoolbox"target="_blank">extensiveautomation-apptoolbox</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                         </tr>
+
+                         <tr>
+                          <td >plugins</td>
+                          <td>
+                            <a  href="https://github.com/ExtensiveAutomation/extensiveautomation-plugins-client"target="_blank">extensiveautomation-apptoolbox-plugins</a>
+                          </td>
+                          <td></td>
+                          <td></td>
+                         </tr>
+
+                        </tbody>
+                    </table>
+            </div>
+
+            <p class="text-center">
+                <small >(Download old versions
+                    <a role="button" href="https://www.extensiveautomation.org/ftp/" target="_blank">here</a>)
+                </small>
+            </p>
+        </div>
+
+        </div>
+
+    <!-- product support -->
+    <div id="docs" class="support">
+        <div class="container separator">
+            <h2 class="title text-center">Documentations</h2>
+            <div class="block text-center">
+                <p>Before to ask something, take a look to the online documentations.</p>
+
+                <a class="btn btn-cta-primary" href="https://extensiveautomation.readthedocs.io/fr/latest/" target="_blank">French</a>
+                <a class="btn btn-cta-primary" href="https://extensiveautomation.readthedocs.io/en/latest/" target="_blank">English</a>
+
+                <br />
+                <br />
+                <p class="text-center">
+                    <small >Click <a role="button" href="https://readthedocs.org/projects/extensiveautomation-en/versions/" target="_blank">here</a> to see previous documentations
+                    </small>
+                </p>
+                <p class="text-center">
+                    <small >Cliquez <a role="button" href="https://readthedocs.org/projects/extensiveautomation/versions/" target="_blank">ici</a> pour afficher les anciennes documentations
+                    </small>
+                </p>
+
+                <br />
+                <br /><p>For technical questions  or request a feature, please to use the forum or github</p>
+                <a class="btn btn-cta-primary" href="http://groups.google.com/group/extensive-automation-users" target="_blank">Google Group</a>
+                <a class="btn btn-cta-primary" href="https://github.com/ExtensiveAutomation/extensiveautomation-server" target="_blank">Github</a>
+            </div>
+
+            <br />
+
+            <br />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+    </div>
+
+    <!-- features description -->
+    <div id="features" class="features">
+        <div class="container separator">
+            <h2 class="title text-center">Features</h2>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                                <h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User Environment</h3>
+                                <ul>
+                                    <li>Collaborative workspace</li>
+                                    <li>Click and test</li>
+                                    <li>Basic or complex testing support</li>
+                                    <li>Ease of deployment and maintenance</li>
+                                    <li>Automated testing in the cloud</li>
+                                    <li>Remote storage for automatic tests and results</li>
+                                    <li><a href="https://www.python.org/" target="_blank">Python</a> test scripting support</li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                                <h3 ><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Framework</h3>
+                                <ul>
+                                    <li>Normalized tests writing</li>
+                                    <li>Making personal stubs and drivers</li>
+                                    <li>Advanced text pattern/regex</li>
+                                    <li>Data driven Testing (text file, csv file or dictionary)</li>
+                                    <li>Non-sequential testing</li>
+                                    <li>Automate and timer support</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                                <h3 ><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Writing</h3>
+                                <ul>
+                                    <li>Built-in IDE with GUI assistant for design</li>
+                                    <li>Generic modelisation</li>
+                                    <li>Object oriented scripting support for advanced users</li>
+                                    <li>Test case support</li>
+                                    <li>Campaign support</li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                                <h3><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Execution</h3>
+                                <ul>
+                                    <li>Simple execution with built-in IDE</li>
+                                    <li>Run from REST API</li>
+                                    <li>Run from the web interface</li>
+                                    <li>Easy replay</li>
+                                    <li>Advanced scheduler (hourly, daily and more...)</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
+                             <h3 ><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Analysis</h3>
+                                <ul>
+                                    <li>Powerful result analysis (based on events list)</li>
+                                    <li>Filter events support</li>
+                                    <li>Ease of analysis (timeline)</li>
+                                    <li>Automatic archiving of result</li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <h3 ><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Reporting</h3>
+                            <ul>
+                                <li>Automatic report generation</li>
+                                <li>Export result to CSV, PDF, XML and more</li>
+                                <li>Email notification</li>
+                                <li>Add comment on result</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
+                             <h3 ><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Control Systems</h3>
+                                <ul>
+                                    <li>TCP, UDP</li>
+                                    <li>HTTP, SOAP, SSH/SFTP, Telnet, </li>
+                                    <li>FTP(S), SNMP, Cisco Catalyst</li>
+                                    <li>MySQL, MsSQL, PostgreSQL, System Command</li>
+                                    <li>And more...</li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <h3 ><span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> Controls Applications</h3>
+                            <ul>
+                                <li>Web application</li>
+                                <li>Windows applications</li>
+                                <li>Android mobile device</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+         <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
+                             <h3 ><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Integrated Tools</h3>
+                                <ul>
+                                    <li><a href="http://www.sikulix.com" target="_blank">SikuliX</a> automates anything you see on the screen</li>
+                                    <li><a href="http://www.seleniumhq.org" target="_blank">Selenium</a> automates browsers</li>
+                                </ul>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                             <h3 ><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Interoperability </h3>
+                                <ul>
+                                    <li>Flexible REST API</li>
+                                    <li><a href="https://fr.atlassian.com/software/jira" target="_blank">Jira</a>, <a href="https://git-scm.com/" target="_blank">Git</a></li>
+                                    <li><a href="http://www8.hp.com/fr/fr/software-solutions/quality-center-quality-management/" target="_blank">HP ALM</a>, <a href="https://wiki.jenkins-ci.org/display/JENKINS/ExtensiveTesting+Plugin" target="_blank">Jenkins</a></li>
+                                    <li><a href="http://www.vmware.com/fr/products/vsphere.html" target="_blank">VSphere</a>, <a href="https://www.sonatype.com/download-oss-sonatype" target="_blank">Nexus</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
+                             <h3 ><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Server Deployment</h3>
+                                <ul>
+                                    <li>Json environment description</li>
+                                    <li>Ssh automated installation</li>
+                                    <li>Checking configuration</li>
+                                    <li><a href="https://www.ansible.com/" target="_blank">Ansible</a> plugin</li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+
+    </div>
+    <!-- news description -->
+    <div id="news" class="news">
+        <div class="container separator">
+            <h2 class="title text-center">News</h2>
+            <div class="block text-center">
+                <a class="twitter-timeline" data-width="600" data-height="600" data-theme="light" href="https://twitter.com/Extensive_Auto">Loading news...</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+
+    </div>
+
+    <!-- product screenshots -->
+    <div id="screenshots" class="screenshots">
+        <div class="container separator">
+            <h2 class="title text-center">Screenshots</h2>
+            <div class="block text-center">
+                <p>Screenshots of the full client, the assistant automation and an example of the report. </p>
+            </div>
+
+            <div class="carousel slide " id="myCarousel" data-ride="carousel">
+               <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/Extensive_Testing_Client.png" class="thumbnail img-responsive center-block" alt="extensive testing client">
+                </div>
+                <div class="item">
+                  <img src="img/Extensive_Testing_Gui_Assistant_Automation.png"  class="thumbnail img-responsive center-block" alt="extensive testing gui assistant automation">
+                </div>
+                <div class="item">
+                  <img src="img/Extensive_Testing_Report.png" class="thumbnail img-responsive center-block" alt="extensive testing report">
+                </div>
+                <div class="item">
+                  <img src="img/Extensive_Testing_Report_Basic.png" class="thumbnail img-responsive center-block" alt="extensive testing basic report">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+    </div>
+
+    <div id="users" class="users">
+        <div class="container separator">
+            <h2 class="title text-center">Users References</h2>
+            <div class="block text-center">
+                The solution is used in different domains and contexts.
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                        <h3><a href="http://www.airbus.com/defence.html"  target="_blank"><img  class="img-responsive center-block" src="img/logo_airbus_defence.png" alt="logo airbus"></a></h3>
+                        <ul>
+                            <li>Space and military domain</li>
+                            <li>Airbus Defence is using ExtensiveAutomation for testing advanced systems with running parallel and synchronized test cases</li>
+                        </ul>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                        <h3><a href="https://www.kobil.com/" target="_blank"><img   class="img-responsive center-block" src="img/logo_kobil.png" alt="logo kobil"></a></h3>
+                        <ul>
+                            <li>Identity security domain</li>
+                            <li>Kobil is using ExtensiveAutomation for testing desktop clients and server parts with multiple adapters in agent mode.</li>
+                            <li>Further the solution is integrated in deployment progress by delegating task execution for setup/cleanup test environments.</li>
+                        </ul>
+
+                </div>
+                <div class="col-md-4 col-sm-4">
+                        <h3><a href="https://www.orange.com/fr/accueil"target="_blank"><img  class="img-responsive center-block"  src="img/logo_orange.JPG" alt="logo kobil"></a></h3>
+                        <ul>
+                            <li>Telecom domain</li>
+                            <li>Orange is using ExtensiveAutomation for testing protocols, API and mobile applications.</li>
+                            <li>Deploy integration platforms and automates applicative configurations in production area.</li>
+                            <li>It's also use to control and check networks devices for testing purpose (visioconferencing, switchs and more)</li>
+                        </ul>
+
+                </div>
+            </div>
+             <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                            <h3><a href="https://www.actility.com/"target="_blank"><img   class="img-responsive center-block"  src="img/logo_actility.png" alt="logo actility"></a></h3>
+                            <ul>
+                                <li>Internet of things domain</li>
+                                <li>Graphical user interface testing</li>
+                            </ul>
+                    </div>
+             </div>
+
+            <br />
+            <br />
+            <br />
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+    </div>
+    <!-- product about -->
+    <div id="about" class="about">
+        <div class="container separator">
+            <h2 class="title text-center">About</h2>
+            <div class="row">
+                <h3 class="sub-title text-center">License</h3>
+                <div class="block text-center license">
+                    <p>This product is a free software; you can redistribute it and/or modify it under the terms of the <a href="https://www.gnu.org/licenses/lgpl-2.1.html" target="_blank">GNU LGPL</a>.</p>
+                    <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;</p>
+                    <p>without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+                </div>
+                <div class="block text-center license">
+                    <p>Copyright <sub><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span></sub> 2010-2019 Denis Machard</p>
+                </div>
+            </div>
+
+           <div class="row">
+                <h3 class="sub-title text-center">Donate</h3>
+                <div class="block text-center">
+                    <p><strong>This project is an effort, driven in my spare time.</strong>
+                    <br /> So this is just a basic personal website, running on my personal machine.
+                    <br /> If you like this project and you want to sponsor me then I am accepting donations via PayPal.
+                    <br /> The money received will be used to cover  web site costs, domain name reservation and more;). </p>
+                </div>
+                <div class="block text-center">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="DVHG3HKJP83BE">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <h3 class="sub-title text-center">Contact</h3>
+                <div class="block text-center">
+                    <p>Denis Machard - <a href="https://www.extensiveautomation.org/">https://www.extensiveautomation.org</a>
+                    <br /> If you have any questions, write to d.machard at gmail dot com</p>
+                    <p><a href="https://twitter.com/Extensive_Auto" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @Extensive_Auto</a></p>
+                </div>
+            </div>
+
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container text-center">
+             <p><small class="copyright"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Extensive Automation <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Copyright 2010-<?php echo date("Y"); ?> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Denis Machard <span class="glyphicon glyphicon-minus" aria-hidden="true"></span></small></p>
+             <p><small class="copyright">Website propulsed with <a href="http://getbootstrap.com/"  target="_blank" class="bootstrap">bootstrap</a></small></p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- twiter js -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <!-- google analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61664685-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
