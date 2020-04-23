@@ -1,0 +1,272 @@
+/* GLOBAL STYLES
+ * -------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+background: #6B6B6B;
+}
+
+.footer {
+  padding: 15px 0;
+  background: #6B6B6B;
+  color: #fff;
+}
+
+.license {
+  font-style: italic;
+}
+.bootstrap {
+  color: #0E98C5;
+}
+
+/* CUSTOMIZE THE NAVBAR
+ * -------------------------------------------------- */
+
+ .navbar {
+ background-color: #000000;
+ }
+ 
+ .navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  //height: 100%;
+  padding: 5px; /* firefox bug fix */
+  width: auto;
+}
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.separator {
+border-bottom: 1px solid #AAAA91;
+}
+
+.promo {
+  background-color: #6B6B6B;
+}
+
+.promo-button {
+  padding-top: 10px;
+}
+
+.promo-caption {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.promo-caption .btn {
+  text-shadow: none;
+}
+
+.promo-more {
+  text-shadow: none;
+  font-style: italic;
+}
+
+.promo-small {
+  text-shadow: none;
+  font-style: italic;
+}
+.promo-small a {
+  color: #0E98C5;
+}
+
+.news {
+  background-color: #f5f5f5;
+  
+}
+
+.news .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.news a {
+  color: #0E98C5;
+}
+
+
+.features {
+  background-color: #f5f5f5;
+  
+}
+
+.features .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.features a {
+  color: #0E98C5;
+}
+
+.screenshots {
+    background-color: #f5f5f5;
+}
+.screenshots .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.videos {
+    background-color: #f5f5f5;
+}
+.videos .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.support {
+    background-color: #f5f5f5;
+}
+.support .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.users {
+    background-color: #f5f5f5;
+
+}
+.users .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.documentations {
+    background-color: #f5f5f5;
+
+}
+.documentations .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.about {
+    background-color: #f5f5f5;
+}
+.about .title {
+  color: #074F66;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.sizer {
+    width: 65%; 
+}
+/* --------------- */
+
+
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+
+/* --------------- */
+
+.btn:focus,
+a.btn:focus {
+  color: #fff;
+}
+a.btn-cta-primary,
+.btn-cta-primary {
+  background: #074f66;
+  border: 1px solid #074f66;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.btn-cta-primary:hover,
+.btn-cta-primary:hover {
+  background: #053c4e;
+  border: 1px solid #053c4e;
+  color: #fff;
+}
+
+a.btn-cta-secondary,
+.btn-cta-secondary {
+  background: #eebf3f;
+  border: 1px solid #eebf3f;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
+  background: #ecb728;
+  border: 1px solid #ecb728;
+  color: #fff;
+}
+
+.sub-title {
+  color: #0e98c5;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.doc {
+  color: #337AB7;
+}
+
+.center-table
+{
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .promo-caption {
+  padding-top: 80px;
+  }
+
+}
